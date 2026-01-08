@@ -88,6 +88,23 @@ Kết quả:
 - Notebook chạy xong sẽ nằm ở `notebooks/runs/*_run.ipynb`
 - Artefacts nằm ở `data/processed/` (metrics, predictions, alerts, parquet)
 
+## 4.1) Dashboard trực quan (Streamlit)
+
+Sau khi chạy pipeline, có thể xem kết quả qua dashboard:
+
+```bash
+streamlit run app.py
+```
+
+Dashboard cung cấp:
+- **Overview**: Thông tin dataset, AQI classes
+- **Model Comparison**: So sánh Baseline vs Self-Training vs Co-Training
+- **Self-Training Analysis**: Diễn biến pseudo-labeling qua iterations
+- **Co-Training Analysis**: Trao đổi labels giữa 2 models
+- **Predictions & Alerts**: Phân tích dự đoán và cảnh báo theo trạm
+
+Xem chi tiết: [DASHBOARD_GUIDE.md](DASHBOARD_GUIDE.md)
+
 ---
 
 ## 5) Mô tả pipeline notebooks (Notebook‑per‑task)
