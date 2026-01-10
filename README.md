@@ -178,3 +178,5 @@ Trang Le
 
 ## 10) License
 MIT — sử dụng tự do cho nghiên cứu, học thuật và ứng dụng nội bộ.
+
+python -m streamlit run app.py
